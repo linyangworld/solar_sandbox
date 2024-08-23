@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class DragRadius : MonoBehaviour
 {
-    public Transform objectToBeRevolved; 
     public float dragSpeed = 0.1f; // Speed at which the drag affects the radius
     private Vector3 lastMousePosition; // Store the last mouse position
 
     private bool isDragging = false; // State to check if the user is dragging
 
+    private Transform objectToBeRevolved; 
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        objectToBeRevolved = GetComponent<RevolveAroundObject>().objectToBeRevolved;
     }
 
     // Update is called once per frame
