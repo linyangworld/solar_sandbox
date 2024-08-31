@@ -8,7 +8,7 @@ public class CelestrialBody : MonoBehaviour
 
     private Rigidbody rb;
     private const float G = 1f;
-
+    
     private static List<CelestrialBody> allBodies = new List<CelestrialBody>(); // ?? How to use List<>
 
 
